@@ -1,0 +1,2 @@
+Sinatardoku is a front end I wrote using canvas and JQuery to interact with a sudoku solving script I wront in ruby. It
+runs on Sinatra. 

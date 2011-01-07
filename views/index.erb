@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    <head> 
+        <meta http-equiv="content-type" content="text/html; charset=iso-8859-1"> 
+        <title>Sinatradoku - The Sudoku Solver</title> 
+        <link rel="stylesheet" href="/css/sinatradoku.css" type="text/css" /> 
+        <script src="/js/jquery.js" type="text/javascript"></script> 
+        <script src="/js/sinatradoku-view.js" type="text/javascript"></script> 
+        <script src="/js/sinatradoku-controller.js" type="text/javascript"></script> 
+        <script type="text/javascript"> 
+            $(document).ready(function() {
+                $.sinatradokuBoard( $('#board').sinatradokuView());
+                
+            });
+        </script>
+    </head> 
+    <body id="body" >
+        <div id="board">
+          <p class="unsupported">Your browser doesn't support canvas.</p>
+        </div>
+    </body>
+</html>
+
