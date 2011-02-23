@@ -139,8 +139,8 @@
 
  drawAll();
  $('#body').append('<div class="toolbar"></div>');
- $('.toolbar').append('<button id=solver>Solve</button>');
- $('.toolbar').append('<button id=clearer>Clear</button>');
+ $('.toolbar').append('<button class="green" id=solver>Solve</button>');
+ $('.toolbar').append('<button class="red" id=clearer>Clear</button>');
 
  /* 
   * Return refs to public methods
