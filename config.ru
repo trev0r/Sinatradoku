@@ -1,3 +1,3 @@
-require 'sinatradoku.rb'
+require './sinatradoku.rb'
 
 run SudokuApp.new

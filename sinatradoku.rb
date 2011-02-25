@@ -1,7 +1,7 @@
 require 'rubygems' if RUBY_VERSION < "1.9"
 require 'sinatra/base'
 require 'json'
-require 'sudokuSolver'
+require './sudokuSolver'
 
 class SudokuApp < Sinatra::Base
   before do
@@ -15,14 +15,14 @@ class SudokuApp < Sinatra::Base
   get '/' do
         erb :index
   end
+  get '/index.html' do
+    erb :index
+  end
   get '/solve*' do
     if request.xhr? 
-      puzzle = params[:puzzle]
+      puzzle = params[:state].split(/,/)
       solution = @solver.solve(puzzle) || puzzle # returns original puzzle if it can't be solved
-      {:solution => solution}.to_json
-      
-
-
+      {:solution => solution}.to_json 
     end
 
   end
